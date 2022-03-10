@@ -1,4 +1,3 @@
-import Big from 'big.js';
 import { formatNumber } from '@utils/format_token';
 
 export const formatMarket = (data: {

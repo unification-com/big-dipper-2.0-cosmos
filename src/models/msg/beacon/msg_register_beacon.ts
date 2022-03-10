@@ -9,22 +9,22 @@ class MsgRegisterBeacon {
     public json: any;
 
     constructor(payload: any) {
-        this.json = payload.json;
-        this.category = 'beacon';
-        this.type = payload.type;
-        this.moniker = payload.moniker;
-        this.name = payload.name;
-        this.owner = payload.owner;
+      this.json = payload.json;
+      this.category = 'beacon';
+      this.type = payload.type;
+      this.moniker = payload.moniker;
+      this.name = payload.name;
+      this.owner = payload.owner;
     }
 
     static fromJson(json: any) {
-        return new MsgRegisterBeacon({
-            json,
-            type: json['@type'],
-            moniker: json.moniker,
-            name: json.name,
-            owner: json.owner,
-        });
+      return new MsgRegisterBeacon({
+        json,
+        type: json['@type'],
+        moniker: json.moniker,
+        name: json.name,
+        owner: json.owner,
+      });
     }
 }
 

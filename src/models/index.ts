@@ -69,13 +69,13 @@ import MsgGrantAllowance from './msg/feegrant/msg_grant_allowance';
 import MsgRevokeAllowance from './msg/feegrant/msg_revoke_allowance';
 import MsgCreateVestingAccount from './msg/vesting/msg_create_vesting_account';
 import MsgCreatePeriodicVestingAccount from './msg/vesting/msg_create_periodic_vesting_account';
-import MsgRegisterBeacon from './msg/beacon/msg_register_beacon'
-import MsgRecordBeaconTimestamp from './msg/beacon/msg_record_timestamp'
-import MsgRegisterWrkChain from './msg/wrkchain/msg_register_wrkchain'
-import MsgRecordWrkChainBlock from "./msg/wrkchain/msg_record_wrkchain_block";
-import MsgUndPurchaseOrder from "./msg/enterprise/msg_raise_po";
-import MsgProcessUndPurchaseOrder from "./msg/enterprise/msg_process_po";
-import MsgWhitelistAddress from "./msg/enterprise/msg_whitelist_address";
+import MsgRegisterBeacon from './msg/beacon/msg_register_beacon';
+import MsgRecordBeaconTimestamp from './msg/beacon/msg_record_timestamp';
+import MsgRegisterWrkChain from './msg/wrkchain/msg_register_wrkchain';
+import MsgRecordWrkChainBlock from './msg/wrkchain/msg_record_wrkchain_block';
+import MsgUndPurchaseOrder from './msg/enterprise/msg_raise_po';
+import MsgProcessUndPurchaseOrder from './msg/enterprise/msg_process_po';
+import MsgWhitelistAddress from './msg/enterprise/msg_whitelist_address';
 
 export {
   BigDipperNetwork,

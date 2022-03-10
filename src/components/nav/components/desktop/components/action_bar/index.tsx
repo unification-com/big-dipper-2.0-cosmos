@@ -3,7 +3,6 @@ import classnames from 'classnames';
 import { useGetComponentDimension } from '@hooks';
 import { useStyles } from './styles';
 import {
-  Network,
   NetworkList,
   SettingsList,
 } from './components';
@@ -14,7 +13,6 @@ const ActionBar: React.FC<{
   className?: string;
   toggleNetwork: () => void;
 }> = ({
-  toggleNetwork,
   className,
   isNetwork,
 }) => {
@@ -27,10 +25,10 @@ const ActionBar: React.FC<{
     <div className={classnames(className, classes.root)} ref={heightRef}>
       <div className={classes.actions}>
         <SearchBar className={classnames(classes.searchBar, { open: isNetwork })} />
-        {/*<Network*/}
-        {/*  className={classnames(classes.network, { open: isNetwork })}*/}
-        {/*  toggleNetwork={toggleNetwork}*/}
-        {/*/>*/}
+        {/* <Network */}
+        {/*  className={classnames(classes.network, { open: isNetwork })} */}
+        {/*  toggleNetwork={toggleNetwork} */}
+        {/* /> */}
         <SettingsList />
       </div>
       <NetworkList

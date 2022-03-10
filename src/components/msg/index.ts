@@ -71,10 +71,10 @@ import CreatePeriodicVestingAccount from './vesting/create_periodic_vesting_acco
 import RegisterBeacon from './beacon/register_beacon';
 import RecordBeaconTimestamp from './beacon/record_timestamp';
 import RegisterWrkChain from './wrkchain/register_wrkchain';
-import RecordWrkChainBlock from "./wrkchain/record_wrkchain_block";
-import UndPurchaseOrder from "./enterprise/msg_raise_po";
-import ProcessUndPurchaseOrder from "./enterprise/msg_process_po";
-import WhitelistAddress from "./enterprise/msg_whitelist_address";
+import RecordWrkChainBlock from './wrkchain/record_wrkchain_block';
+import UndPurchaseOrder from './enterprise/msg_raise_po';
+import ProcessUndPurchaseOrder from './enterprise/msg_process_po';
+import WhitelistAddress from './enterprise/msg_whitelist_address';
 
 export {
   getMessageModelByType,

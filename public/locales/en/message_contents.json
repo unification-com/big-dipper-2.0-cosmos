@@ -55,5 +55,12 @@
   "MsgGrantAllowance": "<0>{{granter}}</0> granted allowance for <1>{{grantee}}</1>",
   "MsgRevokeAllowance": "<0>{{granter}}</0> revoked allowance for <1>{{grantee}}</1>",
   "MsgCreateVestingAccount": "Vesting account created for <0>{{toAddress}}</0>",
-  "MsgCreatePeriodicVestingAccount": "Periodic vesting account created for <0>{{toAddress}}</0>"
+  "MsgCreatePeriodicVestingAccount": "Periodic vesting account created for <0>{{toAddress}}</0>",
+  "MsgRegisterBeacon": "<0>{{owner}}</0> Registered new BEACON <1>{{moniker}}</1>",
+  "MsgRecordBeaconTimestamp": "<0>{{owner}}</0> Recorded timestamp <1>{{hash}}</1> in BEACON #<2>{{beacon_id}}</2>",
+  "MsgRegisterWrkChain": "<0>{{owner}}</0> Registered new WrkChain <1>{{moniker}}</1>",
+  "MsgRecordWrkChainBlock": "<0>{{owner}}</0> Recorded WrkChain block # <1>{{height}}</1> <2>{{block_hash}}</2> in WrkChain #<3>{{wrkchain_id}}</3>",
+  "MsgUndPurchaseOrder": "<0>{{purchaser}}</0> Raised an Enterprise Purchase Order for <1>{{amount}}</1>",
+  "MsgProcessUndPurchaseOrder": "<0>{{signer}}</0> voted <1>{{decision}}</1> on Purchase Order #<2>{{purchase_order_id}}</2>",
+  "MsgWhitelistAddress": "<0>{{signer}}</0> <2>{{action_formatted}}</2> <1>{{address}}</1> <3>{{to_from}}</3> Enterprise Whitelist"
 }

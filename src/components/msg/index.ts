@@ -68,6 +68,13 @@ import GrantAllowance from './feegrant/grant_allowance';
 import RevokeAllowance from './feegrant/revoke_allowance';
 import CreateVestingAccount from './vesting/create_vesting_account';
 import CreatePeriodicVestingAccount from './vesting/create_periodic_vesting_account';
+import RegisterBeacon from './beacon/register_beacon';
+import RecordBeaconTimestamp from './beacon/record_timestamp';
+import RegisterWrkChain from './wrkchain/register_wrkchain';
+import RecordWrkChainBlock from "./wrkchain/record_wrkchain_block";
+import UndPurchaseOrder from "./enterprise/msg_raise_po";
+import ProcessUndPurchaseOrder from "./enterprise/msg_process_po";
+import WhitelistAddress from "./enterprise/msg_whitelist_address";
 
 export {
   getMessageModelByType,
@@ -134,4 +141,11 @@ export {
   RevokeAllowance,
   CreateVestingAccount,
   CreatePeriodicVestingAccount,
+  RegisterBeacon,
+  RecordBeaconTimestamp,
+  RegisterWrkChain,
+  RecordWrkChainBlock,
+  UndPurchaseOrder,
+  ProcessUndPurchaseOrder,
+  WhitelistAddress,
 };

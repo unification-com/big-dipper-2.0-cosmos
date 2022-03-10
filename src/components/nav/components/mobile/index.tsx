@@ -44,14 +44,14 @@ const Mobile: React.FC<{
             menu: isMenu,
           })}
         />
-        <span
-          className={classnames(classes.screens, {
-            open: isNetwork,
-            network: isNetwork,
-          })}
-        >
-          <Networks className={classes.networks} />
-        </span>
+        {/*<span*/}
+        {/*  className={classnames(classes.screens, {*/}
+        {/*    open: isNetwork,*/}
+        {/*    network: isNetwork,*/}
+        {/*  })}*/}
+        {/*>*/}
+        {/*  <Networks className={classes.networks} />*/}
+        {/*</span>*/}
         <Navbar
           isOpen={isOpen}
           openNetwork={openNetwork}

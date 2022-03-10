@@ -54,5 +54,12 @@
   "MsgGrantAllowance": "Grant Allowance",
   "MsgRevokeAllowance": "Revoke Allowance",
   "MsgCreateVestingAccount": "Create Vesting Account",
-  "MsgCreatePeriodicVestingAccount": "Create Periodic Vesting Account"
+  "MsgCreatePeriodicVestingAccount": "Create Periodic Vesting Account",
+  "MsgRegisterBeacon": "Register New BEACON",
+  "MsgRecordBeaconTimestamp": "Record BEACON Timestamp",
+  "MsgRegisterWrkChain": "Register New WrkChain",
+  "MsgRecordWrkChainBlock": "Record WrkChain Block",
+  "MsgUndPurchaseOrder": "Raise Enterprise Purchase Order",
+  "MsgProcessUndPurchaseOrder": "Process Enterprise Purchase Order",
+  "MsgWhitelistAddress": "Whitelist Enterprise Address"
 }

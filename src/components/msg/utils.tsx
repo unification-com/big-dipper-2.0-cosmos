@@ -346,63 +346,56 @@ const getDataByType = (type: string) => {
   // =====================================
   const customTypeToModel = {
     // ========================
-    // profiles
+    // BEACON
     // ========================
-    '/desmos.profiles.v1beta1.MsgSaveProfile': {
-      model: MODELS.MsgSaveProfile,
-      content: COMPONENTS.SaveProfile,
+    '/mainchain.beacon.v1.MsgRegisterBeacon': {
+      model: MODELS.MsgRegisterBeacon,
+      content: COMPONENTS.RegisterBeacon,
       tagTheme: 'four',
-      tagDisplay: 'txSaveProfileLabel',
+      tagDisplay: 'MsgRegisterBeacon',
     },
-    '/desmos.profiles.v1beta1.MsgDeleteProfile': {
-      model: MODELS.MsgDeleteProfile,
-      content: COMPONENTS.DeleteProfile,
+    '/mainchain.beacon.v1.MsgRecordBeaconTimestamp': {
+      model: MODELS.MsgRecordBeaconTimestamp,
+      content: COMPONENTS.RecordBeaconTimestamp,
       tagTheme: 'four',
-      tagDisplay: 'txDeleteProfileLabel',
+      tagDisplay: 'MsgRecordBeaconTimestamp',
     },
-    '/desmos.profiles.v1beta1.MsgCreateRelationship': {
-      model: MODELS.MsgCreateRelationship,
-      content: COMPONENTS.CreateRelationship,
+    // ========================
+    // WrkChain
+    // ========================
+    '/mainchain.wrkchain.v1.MsgRegisterWrkChain': {
+      model: MODELS.MsgRegisterWrkChain,
+      content: COMPONENTS.RegisterWrkChain,
       tagTheme: 'four',
-      tagDisplay: 'txCreateRelationshipLabel',
+      tagDisplay: 'MsgRegisterWrkChain',
     },
-    '/desmos.profiles.v1beta1.MsgRequestDTagTransfer': {
-      model: MODELS.MsgDtagTransferRequest,
-      content: COMPONENTS.DtagTransferRequest,
+    '/mainchain.wrkchain.v1.MsgRecordWrkChainBlock': {
+      model: MODELS.MsgRecordWrkChainBlock,
+      content: COMPONENTS.RecordWrkChainBlock,
       tagTheme: 'four',
-      tagDisplay: 'txRequestDTagTransferLabel',
+      tagDisplay: 'MsgRecordWrkChainBlock',
     },
-    '/desmos.profiles.v1beta1.MsgAcceptDTagTransfer': {
-      model: MODELS.MsgDtagAcceptTransfer,
-      content: COMPONENTS.DtagAcceptTransfer,
+    // ========================
+    // Enterprise
+    // ========================
+    '/mainchain.enterprise.v1.MsgUndPurchaseOrder': {
+      model: MODELS.MsgUndPurchaseOrder,
+      content: COMPONENTS.UndPurchaseOrder,
       tagTheme: 'four',
-      tagDisplay: 'txAcceptDTagTransferLabel',
+      tagDisplay: 'MsgUndPurchaseOrder',
     },
-    '/desmos.profiles.v1beta1.MsgCancelDTagTransfer': {
-      model: MODELS.MsgDtagCancelTransfer,
-      content: COMPONENTS.DtagCancelTransfer,
+    '/mainchain.enterprise.v1.MsgProcessUndPurchaseOrder': {
+      model: MODELS.MsgProcessUndPurchaseOrder,
+      content: COMPONENTS.ProcessUndPurchaseOrder,
       tagTheme: 'four',
-      tagDisplay: 'txCancelDTagTransferLabel',
+      tagDisplay: 'MsgProcessUndPurchaseOrder',
     },
-    '/desmos.profiles.v1beta1.MsgRefuseDTagTransfer': {
-      model: MODELS.MsgDtagRefuseTransfer,
-      content: COMPONENTS.DtagRefuseTransfer,
+    '/mainchain.enterprise.v1.MsgWhitelistAddress': {
+      model: MODELS.MsgWhitelistAddress,
+      content: COMPONENTS.WhitelistAddress,
       tagTheme: 'four',
-      tagDisplay: 'txRefuseDTagTransferLabel',
+      tagDisplay: 'MsgWhitelistAddress',
     },
-    '/desmos.profiles.v1beta1.MsgBlockUser': {
-      model: MODELS.MsgBlockUser,
-      content: COMPONENTS.BlockUser,
-      tagTheme: 'four',
-      tagDisplay: 'txBlockUserLabel',
-    },
-    '/desmos.profiles.v1beta1.MsgUnblockUser': {
-      model: MODELS.MsgUnblockUser,
-      content: COMPONENTS.UnBlockUser,
-      tagTheme: 'four',
-      tagDisplay: 'txUnblockUserLabel',
-    },
-
   };
 
   if (defaultTypeToModel[type]) return defaultTypeToModel[type];

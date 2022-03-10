@@ -16,14 +16,14 @@ export const formatMarket = (data: {
       key: 'marketCap',
       data: marketCap,
     },
-    {
-      key: 'inflation',
-      data: `${formatNumber(Big(data.inflation).times(100).toPrecision(), 0)}%`,
-    },
-    {
-      key: 'apr',
-      data: `${formatNumber(Big(data.apr).times(100).toPrecision(), 2)}%`,
-    },
+    // {
+    //   key: 'inflation',
+    //   data: `${formatNumber(Big(data.inflation).times(100).toPrecision(), 0)}%`,
+    // },
+    // {
+    //   key: 'apr',
+    //   data: `${formatNumber(Big(data.apr).times(100).toPrecision(), 2)}%`,
+    // },
     {
       key: 'supply',
       data: `${formatNumber(data.supply.value, 2)} ${data.supply.displayDenom.toUpperCase()}`,

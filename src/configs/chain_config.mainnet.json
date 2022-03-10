@@ -1,24 +1,29 @@
 {
-  "title": "Desmos Block Explorer",
-  "network": "desmos-mainnet-1",
-  "icon": "https://raw.githubusercontent.com/forbole/big-dipper-assets/master/desmos/icon.svg?sanitize=true",
+  "title": "FUND Block Explorer",
+  "network": "FUND-DevNet",
+  "icon": "https://avatars.githubusercontent.com/u/36923107?s=400&u=6ee342346e77b29cd79436641feb9a0001ccfafb&v=4?sanitize=true",
   "logo": {
-    "default": "https://raw.githubusercontent.com/forbole/big-dipper-assets/master/desmos/logo.svg?sanitize=true"
+    "default": "https://raw.githubusercontent.com/unification-com/mainchain/master/unification_logoblack.png?sanitize=true"
   },
   "prefix": {
-    "consensus": "desmosvalcons",
-    "validator": "desmosvaloper",
-    "account": "desmos"
+    "consensus": "undvalcons",
+    "validator": "undvaloper",
+    "account": "und"
   },
   "genesis": {
     "time": "2021-07-13T08:00:00",
     "height": 1
   },
-  "primaryTokenUnit": "udsm",
-  "votingPowerTokenUnit": "udsm",
+  "primaryTokenUnit": "nund",
+  "priceFeedTokenUnit": "fund",
+  "votingPowerTokenUnit": "vnund",
   "tokenUnits": {
-    "udsm": {
-      "display": "dsm",
+    "nund": {
+      "display": "FUND",
+      "exponent": 9
+    },
+    "vnund": {
+      "display": "nund",
       "exponent": 6
     }
   },

@@ -48,5 +48,9 @@ export const getFilterLabels = () => {
       key: 'others',
       display: 'others',
     },
+    {
+      key: 'beacon',
+      display: 'beacon',
+    },
   ]);
 };

@@ -1,6 +1,6 @@
 {
   "title": "FUND Block Explorer",
-  "network": "FUND-DevNet",
+  "network": "FUND-TestNet-2",
   "icon": "https://avatars.githubusercontent.com/u/36923107?s=400&u=6ee342346e77b29cd79436641feb9a0001ccfafb&v=4?sanitize=true",
   "logo": {
     "default": "https://raw.githubusercontent.com/unification-com/mainchain/stargate/unification_logowhite.png?sanitize=true"
@@ -11,7 +11,7 @@
     "account": "und"
   },
   "genesis": {
-    "time": "2021-07-13T08:00:00",
+    "time": "2022-03-10T14:00:00",
     "height": 1
   },
   "primaryTokenUnit": "nund",

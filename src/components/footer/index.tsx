@@ -3,8 +3,8 @@ import classnames from 'classnames';
 import Trans from 'next-translate/Trans';
 import { useRecoilValue } from 'recoil';
 import useTranslation from 'next-translate/useTranslation';
-import FooterLogoLight from '@assets/big-dipper-red.svg';
-import FooterLogoDark from '@assets/big-dipper-white.svg';
+import FooterLogoLight from '@assets/unification_logoblack.svg';
+import FooterLogoDark from '@assets/unification_logowhite.svg';
 import {
   Button,
   Divider,

@@ -1,8 +1,8 @@
 import React from 'react';
 import * as R from 'ramda';
 import { useRecoilValue } from 'recoil';
-import BigDipperLogoWhite from '@assets/big-dipper-white.svg';
-import BigDipperLogoRed from '@assets/big-dipper-red.svg';
+import BigDipperLogoWhite from '@assets/unification_logowhite.svg';
+import BigDipperLogoRed from '@assets/unification_logoblack.svg';
 import { LinearProgress } from '@material-ui/core';
 import { chainConfig } from '@configs';
 import { readTheme } from '@recoil/settings';

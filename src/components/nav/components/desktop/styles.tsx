@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export const useStyles = () => {
   const styles = makeStyles(
     (theme) => {
-      const OPEN_DRAWER_WIDTH = 230;
+      const OPEN_DRAWER_WIDTH = 250;
       const CLOSED_DRAWER_WIDTH = 59;
 
       return ({
@@ -13,7 +13,7 @@ export const useStyles = () => {
           },
         },
         logo: {
-          width: '216px',
+          width: '250px',
           padding: theme.spacing(2, 1.75, 2.5),
           '&:hover': {
             cursor: 'pointer',

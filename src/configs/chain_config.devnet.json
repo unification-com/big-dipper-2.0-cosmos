@@ -1,0 +1,33 @@
+{
+  "title": "FUND Block Explorer",
+  "network": "FUND-DevNet-2",
+  "icon": "https://avatars.githubusercontent.com/u/36923107?s=400&u=6ee342346e77b29cd79436641feb9a0001ccfafb&v=4?sanitize=true",
+  "logo": {
+    "default": "https://raw.githubusercontent.com/unification-com/mainchain/master/unification_logoblue.png?sanitize=true"
+  },
+  "prefix": {
+    "consensus": "undvalcons",
+    "validator": "undvaloper",
+    "account": "und"
+  },
+  "genesis": {
+    "time": "2022-03-10T14:00:00",
+    "height": 1
+  },
+  "primaryTokenUnit": "nund",
+  "priceFeedTokenUnit": "fund",
+  "votingPowerTokenUnit": "vnund",
+  "tokenUnits": {
+    "nund": {
+      "display": "FUND",
+      "exponent": 9
+    },
+    "vnund": {
+      "display": "FUND",
+      "exponent": 6
+    }
+  },
+  "extra": {
+    "profile": true
+  }
+}

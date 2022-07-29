@@ -9,6 +9,7 @@ import {
   formatToken,
 } from '@utils/format_token';
 import { chainConfig } from '@src/configs';
+import { isValidAddress } from '@utils/prefix_convert';
 import { useDesmosProfile } from '@hooks';
 import { AccountDetailState } from './types';
 import {
@@ -72,8 +73,12 @@ export const useAccountDetails = () => {
   });
 
   useEffect(() => {
-    handleSetState(initialState);
-    if (chainConfig.extra.profile) {
+    if (!isValidAddress(router.query.address as string)) {
+      handleSetState({
+        loading: false,
+        exists: false,
+      });
+    } else if (chainConfig.extra.profile) {
       fetchDesmosProfile(router.query.address as string);
     }
   },
@@ -189,7 +194,7 @@ export const useAccountDetails = () => {
         .plus(unbondingAmount.value)
         .plus(rewardsAmount.value)
         .plus(commissionAmount.value)
-        .toPrecision();
+        .toFixed(chainConfig.tokenUnits[chainConfig.primaryTokenUnit].exponent);
 
       const balance = {
         available: availableAmount,

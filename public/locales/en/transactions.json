@@ -33,5 +33,8 @@
   "authz": "Authz",
   "feegrant": "Feegrant",
   "vesting": "Vesting",
-  "logs": "Logs"
+  "logs": "Logs",
+  "beacon": "BEACON",
+  "wrkchain": "WrkChain",
+  "enterprise": "Enterprise"
 }

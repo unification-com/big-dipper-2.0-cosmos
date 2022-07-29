@@ -52,5 +52,13 @@ export const getFilterLabels = () => {
       key: 'beacon',
       display: 'beacon',
     },
+    {
+      key: 'wrkchain',
+      display: 'wrkchain',
+    },
+    {
+      key: 'enterprise',
+      display: 'enterprise',
+    },
   ]);
 };

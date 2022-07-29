@@ -3,18 +3,20 @@ config:
   # omitOperationSuffix: true
   skipTypeNameForRoot: true
 generates:
-  ./src/graphql/types/general_types.tsx:
+  ./src/graphql/types.tsx:
     documents:
-      - 'src/graphql/general/*'
-    schema: https://gql.desmos.forbole.com/v1/graphql
+      - './src/**/*.graphql'
+      - './src/**/*_actions.ts'
+      - '!./src/**/desmos_profile.graphql'
+    schema: https://graphql-testnet.unification.io/v1/graphql
     plugins:
       - "typescript"
       - "typescript-operations"
       - "typescript-react-apollo" # To generate custom hooks per query
-  ./src/graphql/types/profile_types.ts:
+  ./src/graphql/desmos_profile.ts:
     schema: https://gql.mainnet.desmos.network/v1/graphql
     documents:
-      - 'src/graphql/profiles/*'
+      - 'src/graphql/desmos_profile_graphql.ts'
     plugins:
       - "typescript"
       - "typescript-operations"

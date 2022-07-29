@@ -16,7 +16,7 @@ generates:
   ./src/graphql/desmos_profile.ts:
     schema: https://gql.mainnet.desmos.network/v1/graphql
     documents:
-      - 'src/graphql/desmos_profile_graphql.ts'
+      - 'src/graphql/profiles/desmos_profile_graphql.ts'
     plugins:
       - "typescript"
       - "typescript-operations"

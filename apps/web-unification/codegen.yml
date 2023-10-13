@@ -1,0 +1,14 @@
+overwrite: true
+generates:
+  ./src/graphql/types/general_types.ts:
+    documents:
+      - 'src/graphql/general/*'
+    schema: https://graphql-beta.unification.io/v1/graphql
+    # yarn dlx graphql-codegen download-schema https://graphql-beta.unification.io/v1/graphql --output apps/web-unification/src/graphql/schema.json
+    config:
+      # omitOperationSuffix: true
+      skipTypeNameForRoot: true
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo" # To generate custom hooks per query

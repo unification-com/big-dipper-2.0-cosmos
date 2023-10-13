@@ -127,24 +127,6 @@ const defaultTypeToModel = {
     tagTheme: 'seven',
     tagDisplay: 'txSubmitProposalLabel',
   },
-  '/cosmos.gov.v1.MsgDeposit': {
-    model: MODELS.MsgDeposit,
-    content: COMPONENTS.DepositProposal,
-    tagTheme: 'seven',
-    tagDisplay: 'txDepositLabel',
-  },
-  '/cosmos.gov.v1.MsgVote': {
-    model: MODELS.MsgVote,
-    content: COMPONENTS.Vote,
-    tagTheme: 'seven',
-    tagDisplay: 'txVoteLabel',
-  },
-  '/cosmos.gov.v1.MsgSubmitProposal': {
-    model: MODELS.MsgSubmitProposal,
-    content: COMPONENTS.SubmitProposal,
-    tagTheme: 'seven',
-    tagDisplay: 'txSubmitProposalLabel',
-  },
   // ========================
   // ibc client
   // ========================
@@ -479,6 +461,25 @@ const customTypeToModel = {
     content: COMPONENTS.WhitelistAddress,
     tagTheme: 'four',
     tagDisplay: 'MsgWhitelistAddress',
+  },
+
+  '/cosmos.gov.v1.MsgDeposit': {
+    model: MODELS.MsgDeposit,
+    content: COMPONENTS.DepositProposal,
+    tagTheme: 'seven',
+    tagDisplay: 'txDepositV1Label',
+  },
+  '/cosmos.gov.v1.MsgVote': {
+    model: MODELS.MsgVote,
+    content: COMPONENTS.Vote,
+    tagTheme: 'seven',
+    tagDisplay: 'txVoteV1Label',
+  },
+  '/cosmos.gov.v1.MsgSubmitProposal': {
+    model: MODELS.MsgSubmitProposal,
+    content: COMPONENTS.SubmitProposal,
+    tagTheme: 'seven',
+    tagDisplay: 'txSubmitV1ProposalLabel',
   },
 };
 type CustomTypeToModel = typeof customTypeToModel;

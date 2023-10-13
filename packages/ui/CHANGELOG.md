@@ -1,5 +1,20 @@
 # ui
 
+## 2.37.0
+
+### Minor Changes
+
+- [#1300](https://github.com/forbole/big-dipper-2.0-cosmos/pull/1300) [`2aa110c9`](https://github.com/forbole/big-dipper-2.0-cosmos/commit/2aa110c9c7c7965bfa468c07797a820387094834) Thanks [@rachelhox](https://github.com/rachelhox)! - fix: account page issue
+
+- [#1309](https://github.com/forbole/big-dipper-2.0-cosmos/pull/1309) [`4037aca2`](https://github.com/forbole/big-dipper-2.0-cosmos/commit/4037aca22239ff1696e3ffb6a655d34bcb651458) Thanks [@MonikaCat](https://github.com/MonikaCat)! - add neutron big dipper
+
+### Patch Changes
+
+- [#1306](https://github.com/forbole/big-dipper-2.0-cosmos/pull/1306) [`61b3c8eb`](https://github.com/forbole/big-dipper-2.0-cosmos/commit/61b3c8ebe308a3d64844f6a01ab11b0461a27c33) Thanks [@MonikaCat](https://github.com/MonikaCat)! - fix: accounts transaction loading
+
+- Updated dependencies [[`4037aca2`](https://github.com/forbole/big-dipper-2.0-cosmos/commit/4037aca22239ff1696e3ffb6a655d34bcb651458)]:
+  - shared-utils@2.24.0
+
 ## 2.36.0
 
 ### Minor Changes
